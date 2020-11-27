@@ -1,6 +1,6 @@
 {
   "name": "gosyntax",
-  "description": "Test",
+  "description": "Go syntax highlighting split from vim-go",
   "author": "rainzm <mjoycarry@gmail.com>",
   "repository" : {"type": "git", "url": "https://github.com/rainzm/gosyntax.git"}
 }
