@@ -83,6 +83,13 @@ function! go#config#HighlightDebug() abort
   return get(g:, 'go_highlight_debug', 1)
 endfunction
 
+function! go#config#FoldEnable(...) abort
+  if a:0 > 0
+    return index(go#config#FoldEnable(), a:1) > -1
+  endif
+  return get(g:, 'go_fold_enable', ['block', 'import', 'varconst', 'package_comment'])
+endfunction
+
 " restore Vi compatibility settings
 let &cpo = s:cpo_save
 unlet s:cpo_save
